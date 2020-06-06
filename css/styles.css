@@ -35,3 +35,7 @@ body{
 .navbar-dark {
      background-color: #512DA8;
 }
+#Facts-card-header{
+    background-color:#343232;
+    color: #ffffff;
+}
