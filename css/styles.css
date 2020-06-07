@@ -58,3 +58,17 @@ body{
 #login-btn {
     color: #ddd;
 }
+
+.carousel {
+    background-color: #512DA8;
+}
+.carousel-item {
+    height: 300px;
+}
+
+.carousel img {
+    min-height:300px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
