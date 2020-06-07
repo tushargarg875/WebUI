@@ -50,3 +50,7 @@ body{
     border-right: 1px solid #ddd;
     padding : 10px;
 }
+
+#peterhead:hover, #dannyhead:hover, #agumbehead:hover, #albertohead:hover{
+    cursor: pointer;
+}
