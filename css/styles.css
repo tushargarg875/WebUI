@@ -39,3 +39,14 @@ body{
     background-color:#343232;
     color: #ffffff;
 }
+.btn{
+    white-space: normal !important;
+    word-wrap: break-word;
+    word-break: normal;
+}
+#tabpane{
+    border-bottom: 1px solid #ddd ;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    padding : 10px;
+}
