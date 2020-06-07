@@ -54,3 +54,7 @@ body{
 #peterhead:hover, #dannyhead:hover, #agumbehead:hover, #albertohead:hover{
     cursor: pointer;
 }
+
+#login-btn {
+    color: #ddd;
+}
