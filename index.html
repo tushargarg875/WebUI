@@ -187,6 +187,11 @@
                         </div>
                         
                     </div>
+                    <div id="carouselButton">
+                        <button class="btn btn-danger btn-sm" id="carousel-play-pause">
+                            <span class="fa fa-pause"></span>
+                        </button>                     
+                    </div> 
                     <ol class="carousel-indicators">
                         <li class="active" data-target="#mycarousel" data-slide-to="0"></li>
                         <li data-target="#mycarousel" data-slide-to="1"></li>
@@ -199,7 +204,8 @@
                     <a class="carousel-control-next" href="#mycarousel" role="button" data-slide="next">
                         <span class="carousel-control-next-icon"></span>
                         <span class="sr-only">Next</span>
-                    </a>                    
+                    </a>
+                                     
 
                 </div>
             </div>
@@ -300,9 +306,23 @@
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script>
         $(document).ready(function(){
-            $('[data-toggle="tooltip"]').tooltip();
+            $("#mycarousel").carousel( { interval: 2000 } );
+            $("#carousel-play-pause").click(function(){
+                if ($('#carousel-play-pause').children('span').hasClass('fa-pause')){
+                    $('#mycarousel').carousel('pause');
+                    $('#carousel-play-pause span').removeClass('fa-pause');
+                    $('#carousel-play-pause span').addClass('fa-play');
+                }
+                else {
+                    $('#mycarousel').carousel('cycle');
+                    $('#carousel-play-pause span').removeClass('fa-play');
+                    $('#carousel-play-pause span').addClass('fa-pause');
+                }      
+            });
         });
     </script>
+    
+
 </body>
 
 </html>
